@@ -16,7 +16,7 @@ describe('Module Definition', () => {
         global.exports = {};
         global.define = undefined;
     });
-    it('should set module.exports correctly in CommonJS environment', () => {
+    test('should set module.exports correctly in CommonJS environment', () => {
         // Remove define from the global object to mimic CommonJS environment
         delete global.define;
         global.exports = module.exports;
